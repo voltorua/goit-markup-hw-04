@@ -1,0 +1,362 @@
+:root {
+    --footer-color: #f4f4fd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: #fff;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер І секції */
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* HEADER DONZO */
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.page-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 76px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+.logo-part {
+    color: #2e2f42;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    display: block;
+    padding: 24px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #404bbf;
+}
+
+.contacts {
+    font-style: normal;
+}
+
+.contacts-list {
+    display: flex;
+    gap: 40px;
+}
+
+.contacts-link {
+    display: block;
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color: #404bbf;
+}
+
+/* ПЕРША СЕКЦІЯ DONZO */
+.hero-section {
+    background-color: #2e2f42;
+    padding: 188px 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #fff;
+    max-width: 496px;
+    margin: 0 auto 48px;
+}
+
+.hero-button {
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4d5ae5;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background-color 250ms ease;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #404bbf;
+}
+
+/* ДРУГА СЕКЦІЯ DONZO*/
+.features-section {
+    background-color: #fff;
+}
+
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+.feature-item {
+    flex-basis: calc((100% - 72px) / 4);
+}
+
+.features-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.features-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* ТРЕТЯ СЕКЦІЯ DONZO*/
+.section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    font-weight: 700;
+    margin-bottom: 72px;
+    /* ВИПРАВЛЕННЯ помилочки з margin bottom */
+}
+.team-section {
+    background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.team-card {
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 0 0 4px 4px;
+    /* ✅ заокруглення нижніх кутів */
+}
+
+.team-card img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+}
+
+.card-info {
+    padding: 32px 0;
+    /* ✅ відступи зверху і знизу */
+}
+
+.card-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+    /* ✅ вирівнювання */
+    margin-bottom: 8px;
+    /* ✅ відступ до параграфа */
+}
+
+.card-role {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: center;
+    /* ✅ вирівнювання */
+}
+
+/* ЧЕТВЕРТА СЕКЦІЯ */
+.portfolio-section {
+    background-color: #ffffff;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 48px;
+    /* ✅ вертикальні відступи між рядками */
+    column-gap: 24px;
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    background-color: #ffffff;
+    text-align: center;
+    width: calc((100% - 48px) / 3);
+    /* 3 елементи в ряд */
+}
+
+.card-content {
+    padding: 32px 16px;
+    /* ✅ внутрішні відступи */
+    border: 1px solid #e7e9fc;
+    /* ✅ обводка */
+    border-top: none;
+    /* ✅ скидання верхньої межі */
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+    /* ✅ відступ до параграфа */
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* Footer DONZO */
+.page-footer {
+    background-color: #2e2f42;
+    padding: 100px 0;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+.footer-logo .logo-part {
+    color: var(--footer-color);
+}
+
+.footer-text {
+    color: #fff;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
